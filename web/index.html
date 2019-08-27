@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+ <head>
+   <title>Login form</title>
+     <style type="text/css">
+	 h1{
+	      margin:10px 550px
+	 }
+	    div{
+      background-image: url(img-01.png);
+      background-repeat: no-repeat;
+      background-position:left;
+      margin:10px 5px;
+   }
+	    body{
+		   background-color:#914545;
+		}
+	    div {
+            border-radius: 4px;
+            background-color: #FDFFD0;
+            padding: 20px;
+             }
+	     label{
+		  margin: 10px 550px;
+		 }
+	     .center{
+		   margin:auto;
+		   width:60%;
+		   
+		 }
+         
+			 input[type=text],select {
+                  width: 25%;
+                  padding: 12px 20px;
+                  margin: 10px 550px;
+                  display: inline-block;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                  
+               }   
+             
+         	  input[type=password]{
+                  width: 25%;
+                  padding: 12px 20px;
+                  margin: 10px 550px;
+                  display: inline-block;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                  
+               }   		   
+	          input[type=submit] {
+                  width: 25%;
+                  background-color: #4CAF50;
+                  color: white;
+                  padding: 14px 20px;
+                  margin: 10px 550px;
+                  border: none;
+                  border-radius: 4px;
+                  cursor: pointer;
+               }
+		      input[type=submit]:hover {
+                   background-color:#45a049;
+               }
+
+     </style>
+ </head>
+
+ <body>
+     <div class="center">
+	    <h1><strong>Classroom <br />Management <br />System</h1>
+        <form method="post" action="Controller" name="form1">  
+         <label for="uname" >Username</label>	<br />	
+         <input type="text" id="uname" name="user" ><br />
+		 <label for="password" >Password</label><br />
+         <input type="password" id="password" name="pass" ><br />
+        
+        <select name="actor">
+            <option>Faculty</option>
+            <option>Teaching Assistant</option>
+            <option>Student</option>
+            <option>Admin</option>
+        </select>
+		<br />
+        <input type="hidden" name="page" value="index.html">
+        <input type="submit" value="Login" />
+        </form>
+	  </div>
+ </body>
+</html>

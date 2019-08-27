@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            div {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+            }
+            input[type=text],select {
+                width: 25%;
+                padding: 12px 20px;
+                margin: 4px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+
+            } 
+            input[type=password] {
+                width: 25%;
+                padding: 12px 20px;
+                margin: 4px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+
+            } 
+            input[type=submit] {
+                width: 25%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            input[type=submit]:hover {
+                background-color:#45a049;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div> 
+            <form method="post" action="Controller">              
+                Username :<br /><input type="text" name="user" /><br/><br/>
+                Password :<br /><input type="password" name="pass" /><br/><br/>
+                Name :<br /><input type="text" name="name" /><br/><br/>
+                Employee ID/Roll No. :<br /><input type="text" name="id" /><br/><br/>
+                <select name="actor">
+                    <option>Faculty</option>
+                    <option>Teaching Assistant</option>
+                    <option>Student</option>
+                    <option>Admin</option>
+                </select><br /><br />
+                <input type="hidden" name="page" value="Register.html">
+                <input type="submit" value="Register User" />
+            </form>
+        </div> 
+    </body>
+</html>
